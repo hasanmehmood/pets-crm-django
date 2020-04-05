@@ -10,4 +10,8 @@ Django: 3.0.5
     python manage.py migrate
     python manage.py load_pet_data
     python manage.py runserver
-    
+
+## Running via Docker
+
+    docker build . -t petscrm
+    docker run -it -p 8000:8000 petscrm
